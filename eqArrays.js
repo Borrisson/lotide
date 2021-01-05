@@ -6,8 +6,8 @@ const eqArrays = function(ar1, ar2) {
   if(ar1.length !== ar2.length) {
     return false;
   }
-  for (let el1 of ar1){
-    if(ar1.indexOf(el1) !== ar2.indexOf(el1)) {
+  for (let index of ar1.keys()){
+    if(ar1[index] !== ar2[index]) {
       return false;
     }
   }
