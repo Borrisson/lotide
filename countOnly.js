@@ -1,8 +1,8 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   return actual === expected ? console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`) : console.log(`❌❌❌ Assertion Failed: ${actual} !==  ${expected}`);
 };
 
-const countOnly = function (allItems, itemsToCount) {
+const countOnly = function(allItems, itemsToCount) {
   
   let output = {};
   
@@ -10,7 +10,7 @@ const countOnly = function (allItems, itemsToCount) {
     
     allItems.forEach((item) => { //iterates over items within array
 
-      if (itemsToCount.hasOwnProperty(itemToCount) && itemsToCount[itemToCount] && itemToCount === item) { //comfirms if items exist (and it's own) and true
+      if (itemsToCount[itemToCount] && itemToCount === item) { //comfirms if items exist (and it's own) and true
         if (!output[item]) {
           output[item] = 1;
         } else {
@@ -21,7 +21,7 @@ const countOnly = function (allItems, itemsToCount) {
 
   }
   return output;
-}
+};
 
 const firstNames = [
   "Karl",
