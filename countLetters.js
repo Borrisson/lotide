@@ -31,3 +31,4 @@ assertEqual(word["u"], 2);
 assertEqual(word["s"], 2);
 assertEqual(word["e"], 3);
 assertEqual(word["n"], 1);
+assertEqual(word[" "], undefined);
