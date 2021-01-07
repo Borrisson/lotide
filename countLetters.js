@@ -21,14 +21,14 @@ const countLetters = function(sentence) {
 
 const word = countLetters("lighthouse in the house");
 
-assertEqual(word["l"], 1);
-assertEqual(word["i"], 2);
-assertEqual(word["g"], 1);
-assertEqual(word["h"], 4);
-assertEqual(word["t"], 2);
-assertEqual(word["o"], 2);
-assertEqual(word["u"], 2);
-assertEqual(word["s"], 2);
-assertEqual(word["e"], 3);
-assertEqual(word["n"], 1);
-assertEqual(word[" "], undefined);
+assertArraysEqual(word["l"], 1);
+assertArraysEqual(word["i"], 2);
+assertArraysEqual(word["g"], 1);
+assertArraysEqual(word["h"], 4);
+assertArraysEqual(word["t"], 2);
+assertArraysEqual(word["o"], 2);
+assertArraysEqual(word["u"], 2);
+assertArraysEqual(word["s"], 2);
+assertArraysEqual(word["e"], 3);
+assertArraysEqual(word["n"], 1);
+assertArraysEqual(word[" "], undefined);
