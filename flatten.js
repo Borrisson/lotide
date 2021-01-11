@@ -7,9 +7,9 @@ const flatten = function(array) {
   }
   return newArray;
 };
+module.exports = flatten;
+// const array = [1, 2, [[3], 4], 5, [[6]]];
 
-const array = [1, 2, [[3], 4], 5, [[6]]];
+// console.log(flatten(array));
 
-console.log(flatten(array));
-
-console.log(array);
+// console.log(array);

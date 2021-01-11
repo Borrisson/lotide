@@ -1,8 +1,3 @@
-const assertEqual = function(actual, expected) {
-  return actual === expected ? console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`) : console.log(`❌❌❌ Assertion Failed: ${actual} !==  ${expected}`);
-};
-
-
 const countLetters = function(sentence) {
 
   let output = {};
@@ -19,16 +14,18 @@ const countLetters = function(sentence) {
   return output;
 };
 
-const word = countLetters("lighthouse in the house");
+// const word = countLetters("lighthouse in the house");
 
-assertArraysEqual(word["l"], 1);
-assertArraysEqual(word["i"], 2);
-assertArraysEqual(word["g"], 1);
-assertArraysEqual(word["h"], 4);
-assertArraysEqual(word["t"], 2);
-assertArraysEqual(word["o"], 2);
-assertArraysEqual(word["u"], 2);
-assertArraysEqual(word["s"], 2);
-assertArraysEqual(word["e"], 3);
-assertArraysEqual(word["n"], 1);
-assertArraysEqual(word[" "], undefined);
+// assertArraysEqual(word["l"], 1);
+// assertArraysEqual(word["i"], 2);
+// assertArraysEqual(word["g"], 1);
+// assertArraysEqual(word["h"], 4);
+// assertArraysEqual(word["t"], 2);
+// assertArraysEqual(word["o"], 2);
+// assertArraysEqual(word["u"], 2);
+// assertArraysEqual(word["s"], 2);
+// assertArraysEqual(word["e"], 3);
+// assertArraysEqual(word["n"], 1);
+// assertArraysEqual(word[" "], undefined);
+
+module.exports = countLetters;
