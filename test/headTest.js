@@ -9,7 +9,7 @@ describe('#head', () => {
     assert.strictEqual(head(['5']), '5'); 
   });
   it('returns [] for []', () => {
-    assert.sameMembers(head([]), []);
+    assert.deepEqual(head([]), []);
   });
   it('throws Error for undefined', () => {
     assert.throws(head, 'Undefined Error');

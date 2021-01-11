@@ -1,4 +1,7 @@
 const middle = function(array) {
+  if(array === undefined) {
+    throw new Error('Undefined Error');
+  }
   let arrayLgt = array.length;
   let halfway = arrayLgt / 2;
   if (arrayLgt <= 2) {
