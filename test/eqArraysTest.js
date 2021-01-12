@@ -22,18 +22,17 @@ describe('#eqArrays', function() {
     assert.isTrue(eqArrays([{}], [{}]), true);
   });
   it('returns true for [1, 2, 3] !== [3, 2, 1]', function() {
-    assert.isFalse(eqArrays([1, 2, 3], [3, 2, 1]), 'false')
+    assert.isFalse(eqArrays([1, 2, 3], [3, 2, 1]), 'false');
   });
   it('returns true ["1", "2", "3"] !== ["1", "2", 3]', function() {
-    assert.isFalse(eqArrays(["1", "2", "3"], ["1", "2", 3]), 'false')
+    assert.isFalse(eqArrays(["1", "2", "3"], ["1", "2", 3]), 'false');
   });
   it('returns true [2, 3], [4]] !== [[2, 3], [4, 5]] ', function() {
-    assert.isFalse(eqArrays([[2, 3], [4]], [[2, 3], [4, 5]]), 'false')
+    assert.isFalse(eqArrays([[2, 3], [4]], [[2, 3], [4, 5]]), 'false');
   });
   it('returns true [[2, 3], [4]] !== [[2, 3], 4] ', function() {
-    assert.isFalse(eqArrays([[2, 3], [4]], [[2, 3], 4]), 'false')
+    assert.isFalse(eqArrays([[2, 3], [4]], [[2, 3], 4]), 'false');
   });
-  
 });
 
 // eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
