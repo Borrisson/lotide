@@ -34,6 +34,3 @@ describe('#eqArrays', function() {
     assert.isFalse(eqArrays([[2, 3], [4]], [[2, 3], 4]), 'false');
   });
 });
-
-// eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-// eqArrays([[2, 3], [4]], [[2, 3], [4]]), true); // => true
